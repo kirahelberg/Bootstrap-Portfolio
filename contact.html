@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/reset.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:100,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css" />
+    <title>Kira Helberg Portfolio</title>
+  </head>
+
+  <body>
+    <!--SITE HEADER-->
+    <header class="header">
+      <!--CONTAINER FOR NAV BAR-->
+      <div class="header-container row">
+        <!--PORTFOLIO TITLE-->
+        <h1 class="title col-lg-7 col-md-10 col-sm-10">KIRA HELBERG</h1>
+
+        <!--SITE NAVIGATION-->
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light col-lg-5 col-md-2 col-sm-2"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >About<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--CONTACT-->
+    <section class="content">
+      <h1 class="content-title">CONTACT</h1>
+
+      <!--INPUT FORM-->
+      <div class="contact-container">
+        <form action="contact.html">
+          <label class="name-title">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+
+          <label class="email-title">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+
+          <label class="subject-title">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something..."
+            style="height:200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
