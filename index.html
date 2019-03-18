@@ -45,13 +45,13 @@
           <div class="col-lg-12 col-md-12 col-sm-12" id="navMenu">
             <ul class="nav-menu">
               <li class="menu-item">
-                <a class="menu-link" href="index.html">About</a>
+                <a class="menu-link" id="about-link" onclick="showAbout()">About</a>
               </li>
               <li class="menu-item">
-                <a class="menu-link" href="portfolio.html">Portfolio</a>
+                <a class="menu-link" id="portfolio-link" onclick="showPortfolio()">Portfolio</a>
               </li>
               <li class="menu-item active">
-                <a class="menu-link" href="contact.html">Contact</a>
+                <a class="menu-link" id="contact-link" onclick="showContact()">Contact</a>
               </li>
             </ul>
           </div>
@@ -59,7 +59,7 @@
     </header>
 
     <!--ABOUT ME-->
-    <section class="container">
+    <section class="container" id="about-container">
       <div class="row"><h1 class="content-title col-12">About</h1></div>
 
       <!--IMAGE-->
@@ -98,7 +98,7 @@
     </section>
 
     <!--CONTACT-->
-    <section class="container">
+    <section class="container" id="contact-container">
         <h1 class="content-title">CONTACT</h1>
         <div class="contact-container">
           <div class="row">
@@ -122,5 +122,67 @@
           </div>
         </div>
       </section>
+
+      <!--PORTFOLIO-->
+    <div class="container" id="portfolio-container">
+        <section class="row">
+          <h1 class="content-title col-12">PORTFOLIO</h1>
+  
+          <!--PROJECT 1 THUMBNAIL-->
+          <div class="project-container col-lg-4 col-md-6 col-sm-12">
+            <img
+              class="image"
+              id="crystal-game-image"
+              src="Assets/Images/crystal_game.png"
+              alt="Crystal Collector Game Image"
+            />
+            <div class="overlay">
+              <a
+                class="project-link"
+                href="https://github.com/kirahelberg/Crystals-Collector-Game.git"
+                target="_blank"
+                >CRYSTALS COLLECTOR GAME</a
+              >
+            </div>
+          </div>
+  
+          <!--PROJECT 2 THUMBNAIL-->
+          <div class="project-container col-lg-4 col-md-6 col-sm-12">
+              <img
+                class="image"
+                id="giphy-app-image"
+                src="Assets/Images/cute_kitten.jpg"
+                alt="Giphy giphy-app-image Image"
+              />
+              <div class="overlay">
+                <a
+                  class="project-link"
+                  href="https://github.com/kirahelberg/GIFtastic-Animals.git"
+                  target="_blank"
+                >GIF-TASTIC ANIMALS</a
+                >
+              </div>
+            </div>
+  
+          <!--PROJECT 3 THUMBNAIL-->
+          <div class="project-container col-lg-4 col-md-6 col-sm-12">
+              <img
+                class="image"
+                id="seasonal-escape-image"
+                src="Assets/Images/autumn-mountains.jpg"
+                alt="Seasonal Escape Image"
+              />
+              <div class="overlay">
+                <a
+                  class="project-link"
+                  href="https://github.com/mcook1992/Project_1.git"
+                  target="_blank"
+                  >SEASONAL ESCAPE</a
+                >
+              </div>
+            </div>
+
+        </section>
+      </div>
   </body>
 </html>
