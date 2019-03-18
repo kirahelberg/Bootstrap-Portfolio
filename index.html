@@ -18,6 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="Assets/JS/main.js"></script>
     <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css" />
     <title>Kira Helberg Portfolio</title>
   </head>
@@ -25,43 +26,36 @@
   <body>
     <!--SITE HEADER-->
     <header class="header">
-      <!--CONTAINER FOR NAV BAR-->
-      <div class="header-container row">
-        <!--PORTFOLIO TITLE-->
-        <h1 class="title col-lg-7 col-md-10 col-sm-10">KIRA HELBERG</h1>
-
+        <div class="header-container row">
+          <!--PORTFOLIO TITLE-->
+          <h1 class="title col-lg-12 col-md-12 col-sm-10 col-10">KIRA HELBERG</h1>
+          <div class="col-2">
+            <button id="nav-menu-btn" onclick="showNavMenu()">
+              <img
+                id="menu-icon"
+                src="Assets/icons/icons8-menu-26.png"
+                alt="Menu Icon"
+              />
+            </button>
+          </div>
+        </div>
+  
         <!--SITE NAVIGATION-->
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-light col-lg-5 col-md-2 col-sm-2"
-        >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html"
-                  >About<span class="sr-only">(current)</span></a
-                >
+        <div class="nav-container row">
+          <div class="col-lg-12 col-md-12 col-sm-12" id="navMenu">
+            <ul class="nav-menu">
+              <li class="menu-item">
+                <a class="menu-link" href="index.html">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <li class="menu-item">
+                <a class="menu-link" href="portfolio.html">Portfolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+              <li class="menu-item active">
+                <a class="menu-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
-        </nav>
-      </div>
+        </div>
     </header>
 
     <!--ABOUT ME-->
@@ -72,7 +66,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-5 col-sm-12">
           <img
-            class="img-fluid"
+            class="kira-helberg img-fluid"
             src="Assets/Images/Headshot.jpg"
             alt="Kira Helberg"
           />
@@ -82,23 +76,51 @@
         <div class="col-lg-8 col-md-7 col-sm-12">
           <p class="contentText">
             KIRA HELBERG is a Senior Analyst at Flywheel Partners, a Healthcare
-            Communications Agency. She graduated in 2016 from UCLA with a B.A.
-            in Economics. Currently, she lives in New York City.
+            Communications Agency in New York City. She graduated in 2016 from
+            UCLA with a B.A. in Economics and recently started the Columbia
+            University Engineering Coding Bootcamp program in January 2019.
           </p>
 
           <p class="contentText">
-            She has always been curious about web development, and finally
-            started her journey in January 2019 at the Columbia University
-            Engineering Coding Bootcamp program.
+            She became interested in web development after growing frustrated
+            with innefficient and non-user-friendly design some websites and applications. She aims to use her new web development
+            skills to create applications that have a simplistic and easy-to-use
+            interface to help improve user interaction.
           </p>
 
           <p class="contentText">
-            Besides coding, her interests include: drawing, painting, design,
+            Besides coding, her interests include: drawing, painting,
             photography, cooking, baking, and listening to true-crime podcasts
             (she's a Murderino!).
           </p>
         </div>
       </div>
     </section>
+
+    <!--CONTACT-->
+    <section class="container">
+        <h1 class="content-title">CONTACT</h1>
+        <div class="contact-container">
+          <div class="row">
+              <a
+                class="col-lg-6 col-md-6 col-sm-12 col-12" id="socialMedia-LI"
+                href="https://www.linkedin.com/in/kira-helberg/" target="_blank"
+                >LINKEDIN</a
+              >
+              <a class="col-lg-6 col-md-6 col-sm-12 col-12" id="socialMedia-GH" href="https://github.com/kirahelberg" target="_blank"
+                >GITHUB</a
+                >
+                <a class="col-lg-12 col-md-12 col-sm-12 col-12"id="resume" href="" target="_blank">RESUME</a>
+          </div>
+          <div class="row contactInfo-container">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <h3 class="contact-info">EMAIL: KIRA.HELBERG@GMAIL.COM</h3>
+              <h3 class="contact-info">PHONE: 914-417-1053</h3>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
   </body>
 </html>
